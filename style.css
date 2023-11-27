@@ -1,0 +1,925 @@
+* {
+    color: aliceblue;
+    padding: 0%;
+    margin: 0%;
+
+}
+
+body {
+    background: linear-gradient(to right, #e3ca70, #eacb59, #f1cb41, #e2b40c, #e2b40d);
+}
+
+/* home page css */
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: fit-content;
+    width: 7rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.location {
+    display: flex;
+    font-weight: 900;
+}
+
+.location img {
+    width: 1rem;
+}
+
+.college {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.college a {
+    text-decoration: none;
+    color: #001a25;
+}
+
+.collage_name {
+    text-transform: uppercase;
+    font-family: Sans-Serif, Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8rem;
+    font-weight: 900;
+    background-image: linear-gradient(45deg,
+            #f1c832 0%,
+            #fc0154 29%,
+            #44107a 67%,
+            #231557 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear 1s infinite alternate;
+}
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+
+.nav {
+    text-align: start;
+    height: 100%;
+    line-height: 70px;
+    display: none;
+    flex-direction: column;
+}
+
+.menu_button {
+    color: #04506d;
+    padding-left: 2rem;
+    border-radius: 50%;
+}
+
+
+.menu {
+    border-bottom: 0.1rem solid #eaeaeb;
+    border-top: 0.1rem solid #eaeaeb;
+    margin: 0 30px 0 0;
+    display: inline-flex;
+    flex-direction: column;
+    text-transform: capitalize;
+    background: linear-gradient(to right, #edcc52, #e2b40c, #e2b40d);
+    /* animation: navanimation 2s linear 1s infinite alternate; */
+}
+
+.menu a {
+    text-decoration: none;
+    background-color: transparent;
+    color: #001a25;
+    margin: 0 10px;
+    line-height: 70px;
+    border: 0.5rem solid transparent;
+}
+
+.menu a:hover {
+    background-color: #e7cf7a;
+    border-radius: 1.5rem;
+}
+
+label {
+    color: #001a25;
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: left;
+}
+
+#toggle {
+    display: none;
+}
+
+@keyframes navanimation {
+    0% {
+        border-radius: 50%;
+    }
+
+    100% {
+        border-radius: 0%;
+    }
+}
+
+.body {
+    display: flex;
+    margin-top: 2rem;
+
+}
+
+.vertical_menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #8c92ac;
+}
+
+.vertical_menu a {
+    color: #001a25;
+    background-color: #8c92ac;
+    text-transform: capitalize;
+    font-family: Sans-Serif, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    font-weight: 500;
+    border-end-end-radius: 1rem;
+    transition: transform 2s;
+    overflow: hidden;
+}
+
+.vertical_menu a:hover {
+    transform: translate(2rem, -0.5rem);
+    border-left: 3px solid #e2b40d;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+
+    overflow: hidden;
+}
+
+
+.menu_space {
+    border-left: 3px solid #e2b40d;
+}
+
+
+.collegeoverall {
+    position: relative;
+    top: 0%;
+}
+
+.collegeimg {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    margin-left: 2rem;
+    padding-right: 0;
+    margin-right: 0;
+    background-color: #8c92ac;
+}
+
+.collegeinfo {
+    color: #001a25;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-left: 2rem;
+    z-index: 2;
+    opacity: 1;
+}
+
+.collegeinfo h1 {
+    color: rgb(3, 3, 3);
+    background-color: transparent;
+    text-shadow: 2px 2px 6px rgb(75, 75, 75);
+}
+
+.collegeinfo p {
+    color: #1f1a1e;
+    background-color: transparent;
+    padding-top: 1rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.footer {
+    width: 100%;
+    bottom: 0%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #001a25;
+}
+
+.content {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #001a25;
+    margin-bottom: 1rem;
+
+
+}
+
+.footer h4 {
+    background-color: #001a25;
+    position: relative;
+    bottom: 0%;
+    padding-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+.footer a {
+    background-color: #001a25;
+    text-decoration: none;
+    padding-left: 1rem;
+}
+
+#phone {
+    background-color: #001a25;
+    display: flex;
+}
+
+#phone img {
+    width: 1rem;
+    background-color: #eaeaeb;
+}
+
+#email {
+    background-color: #001a25;
+    display: flex;
+}
+
+#email img {
+    background-color: transparent;
+    width: 1rem;
+    padding-left: 4rem;
+}
+
+#instagram {
+    background-color: #001a25;
+    display: flex;
+}
+
+#instagram img {
+    width: 1rem;
+    height: fit-content;
+    padding-left: 4rem;
+    background-color: #001a25;
+}
+
+#facebook {
+    background-color: #001a25;
+    display: flex;
+    padding-left: 0%;
+}
+
+#facebook img {
+    width: 1rem;
+    margin-left: 2rem;
+    background-color: blue;
+}
+
+/* apply all cources CSS */
+
+.cources {
+    margin-left: 2rem;
+    background-color: white;
+    color: #001a25;
+}
+
+.cources_heading {
+    background-color: #8c92ac;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cources_heading h1 {
+    color: #001a25;
+    background-color: #8c92ac;
+    padding: 1rem;
+    font-weight: 500;
+    /* text-shadow: 1px 1px 6px rgb(211, 203, 203); */
+}
+
+.info {
+    display: flex;
+    background-color: white;
+}
+
+.cources_paragraph {
+    background-color: white;
+    margin-left: 1rem;
+    padding-top: 2rem;
+    padding-right: 1rem;
+    /* border-bottom: 0.3rem solid #ffc600; */
+}
+
+.cources_paragraph p {
+    color: #911bcd;
+    background-color: white;
+    font-weight: 300;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+/* ec */
+.ec_info {
+    background-color: rgb(194, 230, 245);
+    width: 100%;
+}
+
+.ecimg img {
+    width: 50rem;
+    height: fit-content;
+    background-color: rgb(194, 230, 245);
+    padding-left: 8.2rem;
+    padding-right: 8.5rem;
+    display: block;
+    right: 0%;
+}
+
+.down_cources_paragraph {
+    background-color: rgb(194, 230, 245);
+    border-bottom: 0.3rem solid #ffc600;
+    border-right: 0.3rem solid #ffc600;
+}
+
+.down_cources_paragraph p {
+    background-color: rgb(194, 230, 245);
+    color: #04506d;
+    font-weight: 300;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    margin: 1rem;
+}
+
+/* civil page */
+.ceimg img {
+    background-color: white;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    width: 30rem;
+    height: auto;
+}
+
+/* mechanical page */
+.meimg img {
+    background-color: white;
+    padding-top: 1rem;
+}
+
+
+/* media querys */
+@media screen and (width <=480px) {
+    .logo {
+        width: 3rem;
+    }
+
+    .collage_name {
+        margin-left: 2rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .nav {
+        display: flex;
+        z-index: 1000000;
+    }
+
+    label {
+        display: block;
+        cursor: pointer;
+        z-index: 100000000;
+    }
+
+    #toggle {
+        display: none;
+    }
+
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+        z-index: 10000000;
+    }
+
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #eaeaeb;
+        margin: 0;
+        z-index: 1000000;
+    }
+
+    #toggle:checked+.menu {
+        display: block;
+    }
+
+    .body {
+        position: relative;
+    }
+
+    .vertical_menu {
+        display: none;
+    }
+
+    .collegeinfo {
+        display: flex;
+        font-size: small;
+        background-color: transparent;
+    }
+
+
+    .collegeimg img {
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .collegeinfo h1 {
+        position: relative;
+        background-color: transparent;
+        font-size: medium;
+    }
+
+    .collegeinfo p {
+        position: relative;
+        margin-top: 13rem;
+        background-color: transparent;
+    }
+
+    .footer {
+        width: 100%;
+        position: fixed;
+        bottom: 0%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer h4 {
+        padding: 0rem;
+    }
+
+    /* apply all cources */
+    .content {
+        display: flex;
+        flex-direction: column;
+        font-size: smaller;
+    }
+
+    .cources {
+        background-color: #8c92ac;
+        color: #001a25;
+        width: 100%;
+        font-size: small;
+        margin: 0%;
+    }
+
+    .cources_heading {
+        background-color: #8c92ac;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cources_heading h1 {
+        color: #001a25;
+        background-color: #8c92ac;
+        padding: 1rem;
+        font-weight: 500;
+        width: 100%;
+        font-size: medium;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+    }
+
+    .cources_paragraph {
+        background-color: white;
+        margin-left: 0;
+        padding: 2rem;
+        padding-bottom: 10rem;
+        border-bottom: 0.3rem solid #ffc600;
+    }
+
+    .cources_paragraph p {
+        color: #911bcd;
+        background-color: white;
+        font-weight: 300;
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+    }
+
+    /* cs */
+    .csimg img {
+        width: 100%;
+    }
+
+    /* ec */
+    .ecimg img {
+        width: 100%;
+        padding: 0%;
+    }
+
+    .down_cources_paragraph {
+        padding-bottom: 10rem;
+    }
+
+    /* ce */
+    .ceimg img {
+        width: 100%;
+    }
+
+    /* mech */
+    .meimg img {
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (481px <=width <=768px) {
+    .logo {
+        width: 3rem;
+    }
+
+    .collage_name {
+        margin-left: 2rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .nav {
+        display: flex;
+        z-index: 1000000;
+    }
+
+    label {
+        display: block;
+        cursor: pointer;
+        z-index: 100000000;
+    }
+
+    #toggle {
+        display: none;
+    }
+
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+        z-index: 10000000;
+    }
+
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #eaeaeb;
+        margin: 0;
+        z-index: 1000000;
+    }
+
+    #toggle:checked+.menu {
+        display: block;
+    }
+
+    .body {
+        position: relative;
+    }
+
+    .vertical_menu {
+        display: none;
+    }
+
+    .collegeinfo {
+        display: flex;
+        font-size: small;
+        background-color: transparent;
+    }
+
+    .collegeimg img {
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .collegeinfo h1 {
+        position: relative;
+        background-color: transparent;
+        font-size: medium;
+    }
+
+    .collegeinfo p {
+        position: relative;
+        margin-top: 23rem;
+        background-color: transparent;
+    }
+
+    .footer {
+        width: 100%;
+        position: fixed;
+        bottom: 0%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer h4 {
+        padding: 0rem;
+    }
+
+    /* apply all cources */
+    .content {
+        display: flex;
+        flex-direction: column;
+        font-size: smaller;
+    }
+
+    .cources {
+        background-color: #8c92ac;
+        color: #001a25;
+        width: 100%;
+        font-size: small;
+        margin: 0%;
+    }
+
+    .cources_heading {
+        background-color: #8c92ac;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cources_heading h1 {
+        color: #001a25;
+        background-color: #8c92ac;
+        padding: 1rem;
+        font-weight: 500;
+        width: 100%;
+        font-size: medium;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+    }
+
+    .cources_paragraph {
+        background-color: white;
+        margin-left: 0;
+        padding: 2rem;
+        padding-bottom: 10rem;
+        border-bottom: 0.3rem solid #ffc600;
+    }
+
+    .cources_paragraph p {
+        color: #911bcd;
+        background-color: white;
+        font-weight: 300;
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+    }
+
+    /* cs */
+    .csimg img {
+        width: 100%;
+    }
+
+    /* ec */
+    .ecimg img {
+        width: 100%;
+        padding: 0%;
+    }
+
+    .down_cources_paragraph {
+        padding-bottom: 10rem;
+    }
+
+    /* ce */
+    .ceimg img {
+        width: 100%;
+    }
+
+    /* mech */
+    .meimg img {
+        width: 100%;
+    }
+
+}
+
+@media screen and (481px <=width <=650px) {
+    .collegeinfo p {
+        position: relative;
+        margin-top: 17rem;
+        background-color: transparent;
+    }
+}
+
+@media screen and (769px <=width <=1100px) {
+
+
+    .nav {
+        display: flex;
+        z-index: 1000000;
+    }
+
+    label {
+        display: block;
+        cursor: pointer;
+        z-index: 100000000;
+    }
+
+    #toggle {
+        display: none;
+    }
+
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+        z-index: 10000000;
+    }
+
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #eaeaeb;
+        margin: 0;
+        z-index: 1000000;
+    }
+
+    #toggle:checked+.menu {
+        display: block;
+    }
+
+    .body {
+        position: relative;
+    }
+
+    .vertical_menu {
+        display: none;
+    }
+
+    .collegeinfo {
+        display: flex;
+        background-color: transparent;
+    }
+
+    .collegeimg img {
+        width: 100%;
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .collegeinfo h1 {
+        position: relative;
+        background-color: transparent;
+    }
+
+    .collegeinfo p {
+        position: relative;
+        background-color: transparent;
+    }
+
+    .footer {
+        width: 100%;
+        position: fixed;
+        bottom: 0%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer h4 {
+        padding: 0rem;
+    }
+
+    /* apply all cources */
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cources {
+        background-color: #8c92ac;
+        color: #001a25;
+        width: 100%;
+        margin: 0%;
+    }
+
+    .cources_heading {
+        background-color: #8c92ac;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cources_heading h1 {
+        color: #001a25;
+        background-color: #8c92ac;
+        padding: 1rem;
+        font-weight: 500;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+    }
+
+    .cources_paragraph {
+        background-color: white;
+        margin-left: 0;
+        padding: 2rem;
+        padding-bottom: 10rem;
+        border-bottom: 0.3rem solid #ffc600;
+    }
+
+    .cources_paragraph p {
+        color: #911bcd;
+        background-color: white;
+        font-weight: 300;
+        font-size: medium;
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+    }
+
+    /* cs */
+    .csimg img {
+        width: 100%;
+    }
+
+    /* ec */
+    .ecimg img {
+        width: 100%;
+        padding: 0%;
+    }
+
+    .down_cources_paragraph {
+        padding-bottom: 10rem;
+    }
+
+    /* ce */
+    .ceimg img {
+        width: 100%;
+    }
+
+    /* mech */
+    .meimg img {
+        width: 100%;
+    }
+
+}
